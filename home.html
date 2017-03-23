@@ -43,6 +43,63 @@
 
 </head>
 <body>
+<div class="container">
+
+  <p>Language</p>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">繁體中文 (Chinese) </label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Français (French)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > (Khmer)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > 한국어 (Korean)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > русский (Russian)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Español (Spanish)
+</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Việt (Vietnamese)</label>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+
+  <p>Service</p>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Domestic Violence</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Tax Preparation</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Church Services</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Mental Health</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Cultural/Language Groups</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Healthcare
+</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > English Classes</label>
+    </div>
+  </form>
+</div>
 
 </script>
   <nav class="navbar navbar-inverse">
@@ -55,8 +112,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      <li><a href="home.html">Home</a></li>
-        <li class="active"><a href="contact.html">Contact Us <span class="sr-only">(current)</span></a></li>
+      
+        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="about.html">Get Involved</a></li>
         </li>
@@ -64,6 +122,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
 
 <div id="map"></div>
 <script>
@@ -77,15 +137,7 @@
 
     
     <div id='map'></div>
-<script>
-mapboxgl.accessToken = '<your access token here>';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-    center: [-74.50, 40], // starting position
-    zoom: 9 // starting zoom
-});
-</script>
+
 
   </body>
 </html>
