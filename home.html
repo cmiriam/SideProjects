@@ -2,38 +2,145 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- style sheet for mapzen.js -->
+<link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+
+<!-- latest version of mapzen.js-->
+<script src="https://mapzen.com/js/mapzen.js"></script>
+
+<!-- latest minified version of mapzen.js -->
+<script src="https://mapzen.com/js/mapzen.min.js"></script>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
     <meta charset="utf-8">
     <meta name="description" content="Code Weekend Sample Page">
-    <title>Code Weekend Sample Page</title>
+    <title>Home | Access Philly</title>
     <link rel="stylesheet" href="main.css">
      <script src = "jquery.js">
     </script>
     <script src = "main.js">
     </script>
 
-    
-  </head>
+ <link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+<script src="https://mapzen.com/js/mapzen.min.js"></script>   
+<style>
+  #map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  html,body{margin: 0; padding: 0;}
+</style>
 
+</head>
+<body>
+<div class="container">
+
+  <p>Language</p>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">繁體中文 (Chinese) </label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Français (French)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > (Khmer)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > 한국어 (Korean)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > русский (Russian)</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Español (Spanish)
+</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Việt (Vietnamese)</label>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+
+  <p>Service</p>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Domestic Violence</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Tax Preparation</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Church Services</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Mental Health</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Cultural/Language Groups</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > Healthcare
+</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > English Classes</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" > LGBT</label>
+    </div>
+  </form>
+</div>
+
+</script>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AccessPhilly</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Get Involved</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div id="map"></div>
+<script>
+  // Add a map to the 'map' div
+  var map = L.Mapzen.map('map');
+  // Set the center of the map to be the San Francisco Bay Area at zoom level 12
+  map.setView([39.9523, -75.1638], 13);
+</script>
+<script>
   <body>
 
-    <h1>ACCESS PHILLY</h1>
     
-    <!-- Here's a comment that will not show up on the actual page -->
-
-    <p>
-
-      <ul>
-      <li> <a href = "contact.html">Contact Us</a></li>
-       <li> <a href = "about.html">About Us</a></li>
-      </ul>
-   
+    <div id='map'></div>
 
 
-    <h3> </h3>
-    <p>
-        
-    </p>
-    <ul>
-    </ul>
   </body>
 </html>
